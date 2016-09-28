@@ -84,16 +84,67 @@
 
 
 
-<meta name="description" content="标题环境的三个房间哈斯夺冠风华绝代公司发货就">
+<meta name="description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。解：算法过程为：
+第一步：求LU矩阵
+通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示：
+
+经迭代计算，最后得到L和U矩阵为：
+
+第二步：求L和U矩阵的逆u，l
+
+（1）求U矩阵的逆
+由式（9）可得矩阵U的逆的各元素计算如下：
+
+（2）求L矩阵的逆
+由（8）式可得L矩阵的逆的各元素计算如下所以得到的逆矩阵为：3）求A的逆矩阵由式（10）可计算">
 <meta property="og:type" content="article">
-<meta property="og:title" content="new post">
-<meta property="og:url" content="http://yoursite.com/2016/09/27/new-post/index.html">
+<meta property="og:title" content="“LU矩阵分解实例”">
+<meta property="og:url" content="http://yoursite.com/2016/09/28/“LU矩阵分解实例”/index.html">
 <meta property="og:site_name" content="pcczc">
-<meta property="og:description" content="标题环境的三个房间哈斯夺冠风华绝代公司发货就">
-<meta property="og:updated_time" content="2016-09-27T14:38:24.587Z">
+<meta property="og:description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。解：算法过程为：
+第一步：求LU矩阵
+通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示：
+
+经迭代计算，最后得到L和U矩阵为：
+
+第二步：求L和U矩阵的逆u，l
+
+（1）求U矩阵的逆
+由式（9）可得矩阵U的逆的各元素计算如下：
+
+（2）求L矩阵的逆
+由（8）式可得L矩阵的逆的各元素计算如下所以得到的逆矩阵为：3）求A的逆矩阵由式（10）可计算">
+<meta property="og:image" content="http://b375.photo.store.qq.com/psb?/V10zBa9M0THSjQ/4LLKEnUinpWtdzEejBldKBnqc2iA2.bqhjF0*Jtxoo0!/b/dHcBAAAAAAAA&bo=gQBgAAAAAAADB8M!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/KoYf17dgFPwlnkcIHksu0BctrWt7u6g2gia9lLOltY8!/b/dAwBAAAAAAAA&bo=1AAYAAAAAAADAOk!&rf=viewer_4">
+<meta property="og:image" content="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/vIjoV9UBsX4iuTYOZoiXueKtzvIAvNGbzveVGGG*Ozs!/b/dI8AAAAAAAAA&bo=awFsAAAAAAADACM!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/mYC*.SnhZ2FXlMf0.juGa*bTgao294FQTM7xwgG8XHg!/b/dNwAAAAAAAAA&bo=ZwELAQAAAAADAEk!&rf=viewer_4">
+<meta property="og:image" content="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/hXNKRMKmuBgLdR84NkAoZNbMfIu65u1AojrC4nipAWw!/b/dHcBAAAAAAAA&bo=vwFLAQAAAAADANE!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/9CowMI14x4H9TqhkPppOq80VpjN.xdUnHwVHSKMr12g!/b/dAkBAAAAAAAA&bo=PgGxAAAAAAADAKs!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/x6lGahXVHyq0uQGoeRaMksBatYcbjEJESTl5pg6qtL4!/b/dAkBAAAAAAAA&bo=ZQAYAAAAAAADAFg!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/tS81ZuDsWAGSQvPGmbsl9LPg*qQsVO1AR2QQUyNJ7Dw!/b/dNwAAAAAAAAA&bo=5AFlAAAAAAADAKU!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/6aHyRjh7A8T0cVQMWiJWpgIgjY4C6M9JqGYXw7cq5uk!/b/dOUAAAAAAAAA&bo=ywFIAQAAAAADAKY!&rf=viewer_4">
+<meta property="og:image" content="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/M8OsxUDV2CUSGBlujyDSTATvOerNSzqjGuszztnoDXI!/b/dH8BAAAAAAAA&bo=9AFlAAAAAAADALU!&rf=viewer_4">
+<meta property="og:image" content="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/WY8I4D5OWyUCf.8c*R0FQ3nT9HPp79aqahVgHJBUh*I!/b/dHcBAAAAAAAA&bo=uwGMAAAAAAADABM!&rf=viewer_4">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/rDOqeNEjxEex.NzLtpASajjf5PUIADQ7xy1yQSpqldQ!/b/dAwBAAAAAAAA&bo=pgHYAAAAAAADAFo!&rf=viewer_4">
+<meta property="og:image" content="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/04oxsuxcLrKdqOS.qvHAfznfzYul.vEIpSlaEdSkiSo!/b/dAoBAAAAAAAA&bo=4wHdAAAAAAADABo!&rf=viewer_4">
+<meta property="og:image" content="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/5Cfe47CYHigJobgmlWGMykMnwgGAegCkmDtog8*Ie6A!/b/dHcBAAAAAAAA&bo=2wG4AAAAAAADAEc!&rf=viewer_4">
+<meta property="og:updated_time" content="2016-09-28T02:58:54.894Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="new post">
-<meta name="twitter:description" content="标题环境的三个房间哈斯夺冠风华绝代公司发货就">
+<meta name="twitter:title" content="“LU矩阵分解实例”">
+<meta name="twitter:description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。解：算法过程为：
+第一步：求LU矩阵
+通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示：
+
+经迭代计算，最后得到L和U矩阵为：
+
+第二步：求L和U矩阵的逆u，l
+
+（1）求U矩阵的逆
+由式（9）可得矩阵U的逆的各元素计算如下：
+
+（2）求L矩阵的逆
+由（8）式可得L矩阵的逆的各元素计算如下所以得到的逆矩阵为：3）求A的逆矩阵由式（10）可计算">
+<meta name="twitter:image" content="http://b375.photo.store.qq.com/psb?/V10zBa9M0THSjQ/4LLKEnUinpWtdzEejBldKBnqc2iA2.bqhjF0*Jtxoo0!/b/dHcBAAAAAAAA&bo=gQBgAAAAAAADB8M!&rf=viewer_4">
 
 
 
@@ -106,7 +157,7 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: '博主'
+      author: '冲冲'
     }
   };
 </script>
@@ -114,9 +165,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/27/new-post/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/28/“LU矩阵分解实例”/"/>
 
-  <title> new post | pcczc </title>
+  <title> “LU矩阵分解实例” | pcczc </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +287,7 @@
             
             
               
-                new post
+                “LU矩阵分解实例”
               
             
           </h1>
@@ -248,8 +299,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-27T22:36:00+08:00" content="2016-09-27">
-              2016-09-27
+            <time itemprop="dateCreated" datetime="2016-09-28T10:32:14+08:00" content="2016-09-28">
+              2016-09-28
             </time>
           </span>
 
@@ -276,7 +327,19 @@
       
 
       
-        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>环境的三个房间哈斯夺冠风华绝代公司发货就</p>
+        <p>下面给定一四阶矩阵<img src="http://b375.photo.store.qq.com/psb?/V10zBa9M0THSjQ/4LLKEnUinpWtdzEejBldKBnqc2iA2.bqhjF0*Jtxoo0!/b/dHcBAAAAAAAA&amp;bo=gQBgAAAAAAADB8M!&amp;rf=viewer_4" alt="">，通过LU分解求逆矩阵。<br>解：算法过程为：<img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/KoYf17dgFPwlnkcIHksu0BctrWt7u6g2gia9lLOltY8!/b/dAwBAAAAAAAA&amp;bo=1AAYAAAAAAADAOk!&amp;rf=viewer_4" alt=""></p>
+<p>第一步：求LU矩阵<br><img src="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/vIjoV9UBsX4iuTYOZoiXueKtzvIAvNGbzveVGGG*Ozs!/b/dI8AAAAAAAAA&amp;bo=awFsAAAAAAADACM!&amp;rf=viewer_4" alt=""></p>
+<p>通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示：<br><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/mYC*.SnhZ2FXlMf0.juGa*bTgao294FQTM7xwgG8XHg!/b/dNwAAAAAAAAA&amp;bo=ZwELAQAAAAADAEk!&amp;rf=viewer_4" alt=""></p>
+<p><img src="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/hXNKRMKmuBgLdR84NkAoZNbMfIu65u1AojrC4nipAWw!/b/dHcBAAAAAAAA&amp;bo=vwFLAQAAAAADANE!&amp;rf=viewer_4" alt=""></p>
+<p>经迭代计算，最后得到L和U矩阵为：</p>
+<p><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/9CowMI14x4H9TqhkPppOq80VpjN.xdUnHwVHSKMr12g!/b/dAkBAAAAAAAA&amp;bo=PgGxAAAAAAADAKs!&amp;rf=viewer_4" alt=""></p>
+<p>第二步：求L和U矩阵的逆u，l</p>
+<p><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/x6lGahXVHyq0uQGoeRaMksBatYcbjEJESTl5pg6qtL4!/b/dAkBAAAAAAAA&amp;bo=ZQAYAAAAAAADAFg!&amp;rf=viewer_4" alt=""></p>
+<p>（1）求U矩阵的逆<br><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/tS81ZuDsWAGSQvPGmbsl9LPg*qQsVO1AR2QQUyNJ7Dw!/b/dNwAAAAAAAAA&amp;bo=5AFlAAAAAAADAKU!&amp;rf=viewer_4" alt=""></p>
+<p>由式（9）可得矩阵U的逆的各元素计算如下：</p>
+<p><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/6aHyRjh7A8T0cVQMWiJWpgIgjY4C6M9JqGYXw7cq5uk!/b/dOUAAAAAAAAA&amp;bo=ywFIAQAAAAADAKY!&amp;rf=viewer_4" alt=""></p>
+<p>（2）求L矩阵的逆<br><img src="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/M8OsxUDV2CUSGBlujyDSTATvOerNSzqjGuszztnoDXI!/b/dH8BAAAAAAAA&amp;bo=9AFlAAAAAAADALU!&amp;rf=viewer_4" alt=""></p>
+<p>由（8）式可得L矩阵的逆的各元素计算如下<br><img src="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/WY8I4D5OWyUCf.8c*R0FQ3nT9HPp79aqahVgHJBUh*I!/b/dHcBAAAAAAAA&amp;bo=uwGMAAAAAAADABM!&amp;rf=viewer_4" alt=""><br>所以得到的逆矩阵为：<br><img src="http://a2.qpic.cn/psb?/V10zBa9M0THSjQ/rDOqeNEjxEex.NzLtpASajjf5PUIADQ7xy1yQSpqldQ!/b/dAwBAAAAAAAA&amp;bo=pgHYAAAAAAADAFo!&amp;rf=viewer_4" alt=""><br>3）求A的逆矩阵<br>由式（10）可计算得到矩阵A的逆，如下：<br><img src="http://a3.qpic.cn/psb?/V10zBa9M0THSjQ/04oxsuxcLrKdqOS.qvHAfznfzYul.vEIpSlaEdSkiSo!/b/dAoBAAAAAAAA&amp;bo=4wHdAAAAAAADABo!&amp;rf=viewer_4" alt=""><br>由程序计算出的结果如下：<br><img src="http://a1.qpic.cn/psb?/V10zBa9M0THSjQ/5Cfe47CYHigJobgmlWGMykMnwgGAegCkmDtog8*Ie6A!/b/dHcBAAAAAAAA&amp;bo=2wG4AAAAAAADAEc!&amp;rf=viewer_4" alt=""></p>
 
       
     </div>
@@ -369,9 +432,9 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
-               alt="pcczc" />
-          <p class="site-author-name" itemprop="name">pcczc</p>
-          <p class="site-description motion-element" itemprop="description">123</p>
+               alt="进击的冲冲" />
+          <p class="site-author-name" itemprop="name">进击的冲冲</p>
+          <p class="site-description motion-element" itemprop="description">准IT工作者，CS学生，网络工程师</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -408,7 +471,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
@@ -431,7 +494,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">pcczc</span>
+  <span class="author" itemprop="copyrightHolder">进击的冲冲</span>
 </div>
 
 <div class="powered-by">

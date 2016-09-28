@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>””C++指针笔记“ | pcczc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="””C++指针笔记“">
+<meta property="og:url" content="http://yoursite.com/2016/09/28/””C-指针笔记“/index.html">
+<meta property="og:site_name" content="pcczc">
+<meta property="og:description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
+<meta property="og:updated_time" content="2016-09-28T13:12:32.555Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="””C++指针笔记“">
+<meta name="twitter:description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
+  
+    <link rel="alternative" href="/atom.xml" title="pcczc" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="https://github.com/pcczc/pcczc.github.io/blob/master/avatar.gif?raw=true" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">进击的冲冲</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/pcczc" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/3627343474/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-chong-57-27" title="zhihu">zhihu</a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
+		        
+					<a class="mail" target="_blank" href="http://pcczc@163.com/" title="mail">mail</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">进击的冲冲</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">进击的冲冲</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/pcczc" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/3627343474/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-chong-57-27" title="zhihu">zhihu</a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
+			        
+						<a class="mail" target="_blank" href="http://pcczc@163.com/" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-””C-指针笔记“" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ””C++指针笔记“
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。</p>
+<p>定义指针类型的方法将声明符写成<em>d的形式，其中d是变量名，如果在同一条语句中定义了几条指针，每个变量前面都必须有符号</em>：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> *iP1，*ip2;<span class="comment">//ip1和iPhone都是指向int型对象的指针</span></div><div class="line"><span class="keyword">int</span> *p=&amp;ival;<span class="comment">//dp2是只想double类型对象的指针，dp是double型对象</span></div></pre></td></tr></table></figure></p>
+<p>#获取对象的地址<br>指针存放某个对象的地址，需要用到取地址符（操作符&amp;):<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> ival=<span class="number">42</span>；</div><div class="line"><span class="keyword">int</span> *p=&amp;ival；<span class="comment">//p存放ival的地址，或者说p是ival的指针</span></div></pre></td></tr></table></figure></p>
+<p>第二条语句把P定义为一个指向int型的指针，随后初始化p令其指向名为ival的int对象。因为引用不是对象，没有实际地址，所以不能定义指向引用的指针。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">double</span> dval;</div><div class="line"><span class="keyword">double</span> *pd=&amp;dval;<span class="comment">//正确，初始化为double型的地址</span></div><div class="line"><span class="keyword">double</span> *pd2=pd;  <span class="comment">//正确，初始值是指向double对象的指针</span></div><div class="line"><span class="keyword">int</span> *pi=pd;      <span class="comment">//错误：指针pi类型和pd类型不同</span></div><div class="line">pi=&amp;dval;        <span class="comment">//错误：试图把double型对象的地址赋给int型指针</span></div></pre></td></tr></table></figure></p>
+<p>因为在声明语句中指针的类型实际上被用于指定它所指向它所指向对象的类型，所以两者必须匹配。如果指针指向了一个其他类型的对象，对该对象的操作将发生错误。</p>
+<p>#指针值<br>指针的值（即地址）用属下列4种状态之一：<br>1.指向一个对象。<br>2.指向紧邻对象所占空间的下一个位置。<br>3.空指针，意味着没有任何的指向对象。<br>4.无效指针，上述情况之外的其他值。</p>
+<p>#利用指针访问对象<br>如果指针指向了一个对象，则允许用解引用符（操作符*）来访问该对象：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> ival=<span class="number">42</span>;</div><div class="line"><span class="keyword">int</span> *p=&amp;ival;<span class="comment">//p存放着变量ival的地址，或者说p是指针变量ival的指针</span></div><div class="line"><span class="built_in">cout</span>&lt;&lt;p;     <span class="comment">//42</span></div></pre></td></tr></table></figure></p>
+<p>对指针解引用直接赋值也可以得到相应的值。</p>
+<p>#相关符号的多重含义判断<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> i=<span class="number">42</span>;</div><div class="line">	<span class="keyword">int</span> &amp;r=i;<span class="comment">//&amp;紧随类型名出现，因此是声明的一部分，r是一个引用 </span></div><div class="line">	<span class="keyword">int</span> *p;<span class="comment">// 紧随类型名出现，因此是声明的一部分，p是一个指针 </span></div><div class="line">	p=&amp;i;<span class="comment">//&amp;出现在表达式中，是一个取地址符 </span></div><div class="line">	*p=i;<span class="comment">//*出现在表达式中，是一个解引用符 </span></div><div class="line">	<span class="keyword">int</span> &amp;r2=*p;<span class="comment">//&amp;是声明的一部分，*是一个解引用符 </span></div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	<span class="comment">/*int ival=42;</span></div><div class="line">	int *p=&amp;ival;</div><div class="line">	cout&lt;&lt;*p;</div><div class="line">	return 0;*/</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>#空指针<br>  空指针不指向任何对象，在试图使用一个指针之前可以首先检查是否为空。例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> *p1=<span class="literal">nullptr</span>;<span class="comment">//等价于int *p=0；</span></div><div class="line"><span class="keyword">int</span> *p2=<span class="number">0</span>;      <span class="comment">//直接将p2初始化为字面常量0；</span></div><div class="line"><span class="comment">//需要先#include&lt;cstdlib&gt;</span></div><div class="line"><span class="keyword">int</span> *p3=<span class="literal">NULL</span>;   <span class="comment">//等价于int *p3=0；</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/09/28/””C-指针笔记“/" class="archive-article-date">
+  	<time datetime="2016-09-28T13:09:23.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-28</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/28/“C语言实现入门排序”/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">“C语言实现入门排序”</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 进击的冲冲
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://lhr0323.com">刘红仁大帝博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">准IT工作者&lt;br&gt;&lt;br&gt;见习网络工程师&lt;br&gt;CS专业学生</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

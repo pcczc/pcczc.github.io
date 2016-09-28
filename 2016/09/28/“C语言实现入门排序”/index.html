@@ -84,16 +84,19 @@
 
 
 
-<meta name="description" content="内容">
+<meta name="description" content="例子：乱序输入n个数，输出从小到大排序后的结果：
+##1.冒泡排序1234567891011121314151617181920212223242526#include&amp;lt;stdio.h&amp;gt;int main()&amp;#123;    int i, j, n, a[100], temp;    while(scanf(&quot;%d&quot;,&amp;amp;n)!=EOF)    &amp;#123;        for">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“C语言实现入门排序”">
 <meta property="og:url" content="http://yoursite.com/2016/09/28/“C语言实现入门排序”/index.html">
 <meta property="og:site_name" content="pcczc">
-<meta property="og:description" content="内容">
-<meta property="og:updated_time" content="2016-09-28T03:34:07.315Z">
+<meta property="og:description" content="例子：乱序输入n个数，输出从小到大排序后的结果：
+##1.冒泡排序1234567891011121314151617181920212223242526#include&amp;lt;stdio.h&amp;gt;int main()&amp;#123;    int i, j, n, a[100], temp;    while(scanf(&quot;%d&quot;,&amp;amp;n)!=EOF)    &amp;#123;        for">
+<meta property="og:updated_time" content="2016-09-28T04:05:32.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“C语言实现入门排序”">
-<meta name="twitter:description" content="内容">
+<meta name="twitter:description" content="例子：乱序输入n个数，输出从小到大排序后的结果：
+##1.冒泡排序1234567891011121314151617181920212223242526#include&amp;lt;stdio.h&amp;gt;int main()&amp;#123;    int i, j, n, a[100], temp;    while(scanf(&quot;%d&quot;,&amp;amp;n)!=EOF)    &amp;#123;        for">
 
 
 
@@ -276,7 +279,8 @@
       
 
       
-        <p>内容</p>
+        <p>例子：乱序输入n个数，输出从小到大排序后的结果：</p>
+<p>##1.冒泡排序<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> i, j, n, a[<span class="number">100</span>], temp;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n)!=EOF)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</div><div class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++) <span class="comment">//总共需冒泡n-1次</span></div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;n-i<span class="number">-1</span>;j++) <span class="comment">//第i趟冒泡</span></div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>]) <span class="comment">//比较a[j]与a[j+1],使a[j+1]大于a[j]</span></div><div class="line">                &#123;</div><div class="line">                    temp = a[j+<span class="number">1</span>];</div><div class="line">                    a[j+<span class="number">1</span>] = a[j];</div><div class="line">                    a[j] = temp;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++) <span class="comment">//打印</span></div><div class="line">            <span class="built_in">printf</span>(<span class="string">"%d "</span>,a[i]);</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -383,13 +387,6 @@
 
           
 
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
           
 
         </nav>

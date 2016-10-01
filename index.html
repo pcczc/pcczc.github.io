@@ -51,6 +51,8 @@
 	        
 				<li><a href="/tags/随笔">随笔</a></li>
 	        
+				<li><a href="/about">About</a></li>
+	        
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -88,8 +90,6 @@
 		        
 					<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
 		        
-					<a class="mail" target="_blank" href="http://pcczc@163.com/" title="mail">mail</a>
-		        
 			</div>
 		</nav>
 	</header>		
@@ -120,6 +120,8 @@
 		        
 					<li><a href="/tags/随笔">随笔</a></li>
 		        
+					<li><a href="/about">About</a></li>
+		        
 				</ul>
 			</nav>
 			<nav class="header-nav">
@@ -132,8 +134,6 @@
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-chong-57-27" title="zhihu">zhihu</a>
 			        
 						<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
-			        
-						<a class="mail" target="_blank" href="http://pcczc@163.com/" title="mail">mail</a>
 			        
 				</div>
 			</nav>
@@ -154,7 +154,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/09/28/””C-指针笔记“/">””C++指针笔记“</a>
+      <a class="article-title" href="/2016/09/28/””C-指针笔记“/">”C++指针笔记“</a>
     </h1>
   
 
@@ -379,7 +379,7 @@
     <script>
 	var yiliaConfig = {
 		fancybox: true,
-		mathjax: false,
+		mathjax: true,
 		animate: true,
 		isHome: true,
 		isPost: false,
@@ -392,6 +392,27 @@
 </script>
 
 <script src="/./main.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
     

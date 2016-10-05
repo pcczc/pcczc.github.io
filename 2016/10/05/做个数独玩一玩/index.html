@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>做个数独玩一玩 | pcczc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天突发奇想，看到空间有一个数独，从前没有做过这类的东西，数独源于瑞士，后在美国发展、并在日本得以发扬光大的数学智力拼图游戏。拼图是九宫格（即3格宽×3格高）的正方形状，每一格又细分为一个九宫格。在每一个小九宫格中，分别填上1至9的数字，让整个大九宫格每一列、每一行的数字都不重复。于是就想到可以用二维数组试想一下，然后就试了试。。。Shudo1234567891011121314151617181">
+<meta property="og:type" content="article">
+<meta property="og:title" content="做个数独玩一玩">
+<meta property="og:url" content="http://yoursite.com/2016/10/05/做个数独玩一玩/index.html">
+<meta property="og:site_name" content="pcczc">
+<meta property="og:description" content="今天突发奇想，看到空间有一个数独，从前没有做过这类的东西，数独源于瑞士，后在美国发展、并在日本得以发扬光大的数学智力拼图游戏。拼图是九宫格（即3格宽×3格高）的正方形状，每一格又细分为一个九宫格。在每一个小九宫格中，分别填上1至9的数字，让整个大九宫格每一列、每一行的数字都不重复。于是就想到可以用二维数组试想一下，然后就试了试。。。Shudo1234567891011121314151617181">
+<meta property="og:updated_time" content="2016-10-05T04:44:16.349Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="做个数独玩一玩">
+<meta name="twitter:description" content="今天突发奇想，看到空间有一个数独，从前没有做过这类的东西，数独源于瑞士，后在美国发展、并在日本得以发扬光大的数学智力拼图游戏。拼图是九宫格（即3格宽×3格高）的正方形状，每一格又细分为一个九宫格。在每一个小九宫格中，分别填上1至9的数字，让整个大九宫格每一列、每一行的数字都不重复。于是就想到可以用二维数组试想一下，然后就试了试。。。Shudo1234567891011121314151617181">
+  
+    <link rel="alternative" href="/atom.xml" title="pcczc" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="https://github.com/pcczc/pcczc.github.io/blob/master/avatar.gif?raw=true" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">进击的冲冲</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+				<li><a href="/about">About</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/pcczc" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/3627343474/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-chong-57-27" title="zhihu">zhihu</a>
+		        
+					<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">进击的冲冲</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">进击的冲冲</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+					<li><a href="/about">About</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/pcczc" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/3627343474/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-chong-57-27" title="zhihu">zhihu</a>
+			        
+						<a class="douban" target="_blank" href="https://www.douban.com/people/145329430/" title="douban">douban</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-做个数独玩一玩" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      做个数独玩一玩
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天突发奇想，看到空间有一个数独，从前没有做过这类的东西，数独源于瑞士，后在美国发展、并在日本得以发扬光大的数学智力拼图游戏。拼图是九宫格（即3格宽×3格高）的正方形状，每一格又细分为一个九宫格。在每一个小九宫格中，分别填上1至9的数字，让整个大九宫格每一列、每一行的数字都不重复。<br>于是就想到可以用二维数组试想一下，然后就试了试。。。<br><figure class="highlight plain"><figcaption><span>Shudo</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	private:</div><div class="line">		int DataBasic[9][9];</div><div class="line">		int DataResult[9][9];</div><div class="line">		bool isSloved;</div><div class="line">	public:</div><div class="line">	    void PrintA()&#123;</div><div class="line">			for(int i=0;i&lt;=8;i++)&#123;</div><div class="line">				for(int j=0;j&lt;=8;j++)&#123;</div><div class="line">					cout&lt;&lt;DataBasic[i][j]&lt;&lt;&quot; &quot;;</div><div class="line">				&#125;</div><div class="line">				cout&lt;&lt;&quot;\n&quot;;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		void PrintB()&#123;</div><div class="line">				for(int i=0;i&lt;=8;i++)&#123;</div><div class="line">				for(int j=0;j&lt;=8;j++)&#123;</div><div class="line">					cout&lt;&lt;DataResult[i][j]&lt;&lt;&quot; &quot;;</div><div class="line">				&#125;</div><div class="line">				cout&lt;&lt;&quot;\n&quot;;</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">		&#125;</div><div class="line">		Shudo(int Data[9][9])</div><div class="line">		&#123;</div><div class="line">			memcpy(DataBasic,Data,sizeof(DataBasic));</div><div class="line">			isSloved=false;</div><div class="line">		&#125;</div><div class="line">		bool isVaild(int i,int j)</div><div class="line">		&#123;</div><div class="line">			int t=DataBasic[i][j];</div><div class="line">			int k;</div><div class="line">			for(k=0;k&lt;9;k++)</div><div class="line">			&#123;</div><div class="line">				if((j!=k)&amp;&amp;(t==DataBasic[i][k]))</div><div class="line">					return false;</div><div class="line">				if((i!=k)&amp;&amp;(t==DataBasic[k][j]))</div><div class="line">					return false;</div><div class="line">			&#125;</div><div class="line">			int iData=(i/3)*3;</div><div class="line">			int jData=(j/3)*3;</div><div class="line">			int k1,k2;</div><div class="line">			for(k1=iData;k1&lt;iData+3;k1++)</div><div class="line">			&#123;</div><div class="line">				for(k2=jData;k2&lt;jData+3;k2++)</div><div class="line">				&#123;</div><div class="line">					if((k2==j)&amp;&amp;(k1==i))</div><div class="line">					continue;</div><div class="line">					if(t==DataBasic[k1][k2])</div><div class="line">					return false;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			return true;</div><div class="line">		&#125;</div><div class="line">		bool ShuduSlove()</div><div class="line">		&#123;</div><div class="line">			int i,j,k;</div><div class="line">			for(i=0;i&lt;9;i++)</div><div class="line">			&#123;</div><div class="line">				for(j=0;j&lt;9;j++)</div><div class="line">				&#123;</div><div class="line">					if(DataBasic[i][j]==0)</div><div class="line">					&#123;</div><div class="line">						for(k=1;k&lt;10;k++)</div><div class="line">						&#123;</div><div class="line">							DataBasic[i][j]=k;</div><div class="line">							if(isVaild(i,j)&amp;&amp;ShuduSlove())            //!!!</div><div class="line">							&#123;</div><div class="line">								if(!isSloved)</div><div class="line">									memcpy(DataResult,DataBasic,sizeof(DataBasic));</div><div class="line">									isSloved=true;</div><div class="line">									return true;</div><div class="line">							&#125;</div><div class="line">							DataBasic[i][j]=0;</div><div class="line">						&#125;</div><div class="line">						return false;</div><div class="line">					&#125;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			return true;</div><div class="line">		&#125;</div><div class="line"> &#125; ;</div></pre></td></tr></table></figure></p>
+<p>先写了一个数独类，及9行9列的二维数组，用DataBasic表示初始的题目，用DataResult表示最后完成的题目，方法是挨个深度优先遍历后往里填，用isVaild()方法验证行列是否合适，合适就把值填到DataResult中。<br>找了一个题目试了一下，把它打出来：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"> <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line"> <span class="keyword">int</span> data[<span class="number">9</span>][<span class="number">9</span>]=&#123;</div><div class="line"> 	&#123;<span class="number">0</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">6</span>,<span class="number">3</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">9</span>&#125;,</div><div class="line">	&#123;<span class="number">6</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">5</span>&#125;,</div><div class="line">	&#123;<span class="number">3</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">0</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">0</span>&#125;,</div><div class="line">	&#123;<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">8</span>&#125;,</div><div class="line">	&#123;<span class="number">4</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">7</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>&#125;,</div><div class="line">	&#123;<span class="number">9</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">7</span>&#125;,</div><div class="line">	&#123;<span class="number">0</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>&#125;,</div><div class="line">	&#123;<span class="number">2</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">7</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">4</span>&#125;,</div><div class="line">	&#123;<span class="number">7</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">9</span>,<span class="number">0</span>,<span class="number">8</span>,<span class="number">5</span>,<span class="number">0</span>&#125;,</div><div class="line">	&#125;;</div><div class="line"><span class="function">Shudo <span class="title">shudu</span><span class="params">(data)</span></span>;</div><div class="line">shudu.PrintA();</div><div class="line">shudu.ShuduSlove();</div><div class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">"\n"</span>;</div><div class="line">shudu.PrintB();</div><div class="line"><span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>能出结果，还凑活</p>
+<p>以后挂个GUI，估计就能用了。。。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/05/做个数独玩一玩/" class="archive-article-date">
+  	<time datetime="2016-10-05T04:27:32.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-05</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/28/””C-指针笔记“/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">”C++指针笔记“</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+<div class="share_addthis share_jia">
+  <div class="sharing addthis_toolbox share">
+  	<span class="jiathis_txt">Share to: &nbsp; </span>
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="做个数独玩一玩" data-title="做个数独玩一玩" data-url="http://yoursite.com/2016/10/05/做个数独玩一玩/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"duoshuo-key"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 进击的冲冲
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://lhr0323.com">刘红仁大帝博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">准IT工作者&lt;br&gt;&lt;br&gt;见习网络工程师&lt;br&gt;CS专业学生</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

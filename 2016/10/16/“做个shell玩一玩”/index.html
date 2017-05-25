@@ -6,31 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>“做个shell玩一玩” | pcczc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令
-func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里 init.py ：使 func 文件夹能作为 Python 模块被导入
- cd.py ：实现了 Shell 的 cd 命令
- constants.py ：定义了各种常量与路径
- exit.py ：定义了 exit 命令，用来退出程序
- getenv.py ：实现">
+  <meta name="description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里init.py ：使 func 文件夹能作为 Python 模块被导入cd.py ：实现了 Shell 的 cd 命令constants.py ：定义了各种常量与路径exit.py ：定义了 exit 命令，用来退出程序getenv.py ：实现 getenv 命令，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“做个shell玩一玩”">
 <meta property="og:url" content="http://yoursite.com/2016/10/16/“做个shell玩一玩”/index.html">
 <meta property="og:site_name" content="pcczc">
-<meta property="og:description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令
-func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里 init.py ：使 func 文件夹能作为 Python 模块被导入
- cd.py ：实现了 Shell 的 cd 命令
- constants.py ：定义了各种常量与路径
- exit.py ：定义了 exit 命令，用来退出程序
- getenv.py ：实现">
-<meta property="og:updated_time" content="2016-10-16T02:52:40.641Z">
+<meta property="og:description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里init.py ：使 func 文件夹能作为 Python 模块被导入cd.py ：实现了 Shell 的 cd 命令constants.py ：定义了各种常量与路径exit.py ：定义了 exit 命令，用来退出程序getenv.py ：实现 getenv 命令，">
+<meta property="og:updated_time" content="2017-05-09T15:53:59.432Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“做个shell玩一玩”">
-<meta name="twitter:description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令
-func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里 init.py ：使 func 文件夹能作为 Python 模块被导入
- cd.py ：实现了 Shell 的 cd 命令
- constants.py ：定义了各种常量与路径
- exit.py ：定义了 exit 命令，用来退出程序
- getenv.py ：实现">
+<meta name="twitter:description" content="shell.py ：Shell 的主程序，负责读取、解析并执行命令func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里init.py ：使 func 文件夹能作为 Python 模块被导入cd.py ：实现了 Shell 的 cd 命令constants.py ：定义了各种常量与路径exit.py ：定义了 exit 命令，用来退出程序getenv.py ：实现 getenv 命令，">
   
     <link rel="alternative" href="/atom.xml" title="pcczc" type="application/atom+xml">
   
@@ -59,13 +44,17 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
 		</hgroup>
 
 		
+		<p class="header-subtitle">PCc personal zone</p>
+		
 
 		<nav class="header-menu">
 			<ul>
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔">随笔</a></li>
+				<li><a href="/essay">随笔</a></li>
+	        
+				<li><a href="/article">文章</a></li>
 	        
 				<li><a href="/about">About</a></li>
 	        
@@ -80,17 +69,12 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
     			
             
     			
-    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">友链</a>
     			
     			
             
     			
-    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
-    			
-    			
-            
-    			
-    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
     			
     			
             
@@ -129,12 +113,16 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
 			  <h1 class="header-author">进击的冲冲</h1>
 			</hgroup>
 			
+			<p class="header-subtitle">PCc personal zone</p>
+			
 			<nav class="header-menu">
 				<ul>
 				
 					<li><a href="/">主页</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/essay">随笔</a></li>
+		        
+					<li><a href="/article">文章</a></li>
 		        
 					<li><a href="/about">About</a></li>
 		        
@@ -176,15 +164,8 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>shell.py ：Shell 的主程序，负责读取、解析并执行命令</p>
-<p>func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里<br> <strong>init</strong>.py ：使 func 文件夹能作为 Python 模块被导入</p>
-<p> cd.py ：实现了 Shell 的 cd 命令</p>
-<p> constants.py ：定义了各种常量与路径</p>
-<p> exit.py ：定义了 exit 命令，用来退出程序</p>
-<p> getenv.py ：实现 getenv 命令，获取系统变量的值</p>
-<p> history.py：实现 history 命令，展示输入的命令日志</p>
-<p>#shell.py</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> sys</div><div class="line"><span class="keyword">import</span> shlex</div><div class="line"><span class="keyword">import</span> getpass</div><div class="line"><span class="keyword">import</span> socket</div><div class="line"><span class="keyword">import</span> signal</div><div class="line"><span class="keyword">import</span> subprocess</div><div class="line"><span class="keyword">import</span> platform</div><div class="line"><span class="keyword">from</span> func <span class="keyword">import</span> *</div><div class="line"></div><div class="line">built_in_cmds = &#123;&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">tokenize</span><span class="params">(string)</span>:</span></div><div class="line">    <span class="keyword">return</span> shlex.split(string)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">preprocess</span><span class="params">(tokens)</span>:</span></div><div class="line">    processed_token = []</div><div class="line">    <span class="keyword">for</span> token <span class="keyword">in</span> tokens:</div><div class="line">        <span class="keyword">if</span> token.startswith(<span class="string">'$'</span>):</div><div class="line">            processed_token.append(os.getenv(token[<span class="number">1</span>:]))</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            processed_token.append(token)</div><div class="line">    <span class="keyword">return</span> processed_token</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">handler_kill</span><span class="params">(signum, frame)</span>:</span></div><div class="line">    <span class="keyword">raise</span> OSError(<span class="string">"Killed!"</span>)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">execute</span><span class="params">(cmd_tokens)</span>:</span></div><div class="line">    <span class="keyword">with</span> open(HISTORY_PATH, <span class="string">'a'</span>) <span class="keyword">as</span> history_file:</div><div class="line">        history_file.write(<span class="string">' '</span>.join(cmd_tokens) + os.linesep)</div><div class="line">    <span class="keyword">if</span> cmd_tokens:</div><div class="line">        cmd_name = cmd_tokens[<span class="number">0</span>]</div><div class="line">        cmd_args = cmd_tokens[<span class="number">1</span>:]</div><div class="line">        <span class="keyword">if</span> cmd_name <span class="keyword">in</span> built_in_cmds:</div><div class="line">            <span class="keyword">return</span> built_in_cmds[cmd_name](cmd_args)</div><div class="line">        signal.signal(signal.SIGINT, handler_kill)</div><div class="line">        <span class="keyword">if</span> platform.system() != <span class="string">"Windows"</span>:</div><div class="line">            p = subprocess.Popen(cmd_tokens)</div><div class="line">            p.communicate()</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            command = <span class="string">""</span></div><div class="line">            command = <span class="string">' '</span>.join(cmd_tokens)</div><div class="line">            os.system(command)</div><div class="line">    <span class="keyword">return</span> SHELL_STATUS_RUN</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">display_cmd_prompt</span><span class="params">()</span>:</span></div><div class="line">    user = getpass.getuser()</div><div class="line">    hostname = socket.gethostname()</div><div class="line">    cwd = os.getcwd()</div><div class="line">    base_dir = os.path.basename(cwd)</div><div class="line">    home_dir = os.path.expanduser(<span class="string">'~'</span>)</div><div class="line">    <span class="keyword">if</span> cwd == home_dir:</div><div class="line">        base_dir = <span class="string">'~'</span></div><div class="line">    <span class="keyword">if</span> platform.system() != <span class="string">'Windows'</span>:</div><div class="line">        sys.stdout.write(<span class="string">"[\033[1;33m%s\033[0;0m@%s \033[1;36m%s\033[0;0m] $ "</span> % (user, hostname, base_dir))</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        sys.stdout.write(<span class="string">"[%s@%s %s]$ "</span> % (user, hostname, base_dir))</div><div class="line">    sys.stdout.flush()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">ignore_signals</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">if</span> platform.system() != <span class="string">"Windows"</span>:</div><div class="line">        signal.signal(signal.SIGTSTP, signal.SIG_IGN)</div><div class="line">    signal.signal(signal.SIGINT, signal.SIG_IGN)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">shell_loop</span><span class="params">()</span>:</span></div><div class="line">    status = SHELL_STATUS_RUN</div><div class="line">    <span class="keyword">while</span> status == SHELL_STATUS_RUN:</div><div class="line">        display_cmd_prompt()</div><div class="line">        ignore_signals()</div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            cmd = sys.stdin.readline()</div><div class="line">            cmd_tokens = tokenize(cmd)</div><div class="line">            cmd_tokens = preprocess(cmd_tokens)</div><div class="line">            status = execute(cmd_tokens)</div><div class="line">        <span class="keyword">except</span>:</div><div class="line">            _, err, _ = sys.exc_info()</div><div class="line">            print(err)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">register_command</span><span class="params">(name, func)</span>:</span></div><div class="line">    built_in_cmds[name] = func</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">()</span>:</span></div><div class="line">    register_command(<span class="string">"cd"</span>, cd)</div><div class="line">    register_command(<span class="string">"exit"</span>, exit)</div><div class="line">    register_command(<span class="string">"getenv"</span>, getenv)</div><div class="line">    register_command(<span class="string">"history"</span>, history)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    init()</div><div class="line">    shell_loop()</div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure>
+        <p>shell.py ：Shell 的主程序，负责读取、解析并执行命令<br>func/ ：自定义模块，所有的自定义命令的实现函数文件都位于这里<br><strong>init</strong>.py ：使 func 文件夹能作为 Python 模块被导入<br>cd.py ：实现了 Shell 的 cd 命令<br>constants.py ：定义了各种常量与路径<br>exit.py ：定义了 exit 命令，用来退出程序<br>getenv.py ：实现 getenv 命令，获取系统变量的值<br>history.py：实现 history 命令，展示输入的命令日志</p>
+<p>#shell.py<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> sys</div><div class="line"><span class="keyword">import</span> shlex</div><div class="line"><span class="keyword">import</span> getpass</div><div class="line"><span class="keyword">import</span> socket</div><div class="line"><span class="keyword">import</span> signal</div><div class="line"><span class="keyword">import</span> subprocess</div><div class="line"><span class="keyword">import</span> platform</div><div class="line"><span class="keyword">from</span> func <span class="keyword">import</span> *</div><div class="line">built_in_cmds = &#123;&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">tokenize</span><span class="params">(string)</span>:</span></div><div class="line">    <span class="keyword">return</span> shlex.split(string)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">preprocess</span><span class="params">(tokens)</span>:</span></div><div class="line">    processed_token = []</div><div class="line">    <span class="keyword">for</span> token <span class="keyword">in</span> tokens:</div><div class="line">        <span class="keyword">if</span> token.startswith(<span class="string">'$'</span>):</div><div class="line">            processed_token.append(os.getenv(token[<span class="number">1</span>:]))</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            processed_token.append(token)</div><div class="line">    <span class="keyword">return</span> processed_token</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">handler_kill</span><span class="params">(signum, frame)</span>:</span></div><div class="line">    <span class="keyword">raise</span> OSError(<span class="string">"Killed!"</span>)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">execute</span><span class="params">(cmd_tokens)</span>:</span></div><div class="line">    <span class="keyword">with</span> open(HISTORY_PATH, <span class="string">'a'</span>) <span class="keyword">as</span> history_file:</div><div class="line">        history_file.write(<span class="string">' '</span>.join(cmd_tokens) + os.linesep)</div><div class="line">    <span class="keyword">if</span> cmd_tokens:</div><div class="line">        cmd_name = cmd_tokens[<span class="number">0</span>]</div><div class="line">        cmd_args = cmd_tokens[<span class="number">1</span>:]</div><div class="line">        <span class="keyword">if</span> cmd_name <span class="keyword">in</span> built_in_cmds:</div><div class="line">            <span class="keyword">return</span> built_in_cmds[cmd_name](cmd_args)</div><div class="line">        signal.signal(signal.SIGINT, handler_kill)</div><div class="line">        <span class="keyword">if</span> platform.system() != <span class="string">"Windows"</span>:</div><div class="line">            p = subprocess.Popen(cmd_tokens)</div><div class="line">            p.communicate()</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            command = <span class="string">""</span></div><div class="line">            command = <span class="string">' '</span>.join(cmd_tokens)</div><div class="line">            os.system(command)</div><div class="line">    <span class="keyword">return</span> SHELL_STATUS_RUN</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">display_cmd_prompt</span><span class="params">()</span>:</span></div><div class="line">    user = getpass.getuser()</div><div class="line">    hostname = socket.gethostname()</div><div class="line">    cwd = os.getcwd()</div><div class="line">    base_dir = os.path.basename(cwd)</div><div class="line">    home_dir = os.path.expanduser(<span class="string">'~'</span>)</div><div class="line">    <span class="keyword">if</span> cwd == home_dir:</div><div class="line">        base_dir = <span class="string">'~'</span></div><div class="line">    <span class="keyword">if</span> platform.system() != <span class="string">'Windows'</span>:</div><div class="line">        sys.stdout.write(<span class="string">"[\033[1;33m%s\033[0;0m@%s \033[1;36m%s\033[0;0m] $ "</span> % (user, hostname, base_dir))</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        sys.stdout.write(<span class="string">"[%s@%s %s]$ "</span> % (user, hostname, base_dir))</div><div class="line">    sys.stdout.flush()</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">ignore_signals</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">if</span> platform.system() != <span class="string">"Windows"</span>:</div><div class="line">        signal.signal(signal.SIGTSTP, signal.SIG_IGN)</div><div class="line">    signal.signal(signal.SIGINT, signal.SIG_IGN)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">shell_loop</span><span class="params">()</span>:</span></div><div class="line">    status = SHELL_STATUS_RUN</div><div class="line">    <span class="keyword">while</span> status == SHELL_STATUS_RUN:</div><div class="line">        display_cmd_prompt()</div><div class="line">        ignore_signals()</div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            cmd = sys.stdin.readline()</div><div class="line">            cmd_tokens = tokenize(cmd)</div><div class="line">            cmd_tokens = preprocess(cmd_tokens)</div><div class="line">            status = execute(cmd_tokens)</div><div class="line">        <span class="keyword">except</span>:</div><div class="line">            _, err, _ = sys.exc_info()</div><div class="line">            print(err)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">register_command</span><span class="params">(name, func)</span>:</span></div><div class="line">    built_in_cmds[name] = func</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">()</span>:</span></div><div class="line">    register_command(<span class="string">"cd"</span>, cd)</div><div class="line">    register_command(<span class="string">"exit"</span>, exit)</div><div class="line">    register_command(<span class="string">"getenv"</span>, getenv)</div><div class="line">    register_command(<span class="string">"history"</span>, history)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    init()</div><div class="line">    shell_loop()</div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure></p>
 <p>#constants.py</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line"></div><div class="line">SHELL_STATUS_STOP = <span class="number">0</span></div><div class="line">SHELL_STATUS_RUN = <span class="number">1</span></div><div class="line"></div><div class="line">HISTORY_PATH = os.path.expanduser(<span class="string">'~'</span>) + os.sep + <span class="string">'.shiyanlou_shell_history'</span></div></pre></td></tr></table></figure>
 <p>#exit.py</p>
@@ -211,6 +192,15 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/05/12/Urllib库Python爬虫应用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Urllib库Python爬虫应用
+        
+      </div>
+    </a>
   
   
     <a href="/2016/10/05/做个数独玩一玩/" id="article-nav-older" class="article-nav-link-wrap">
@@ -258,26 +248,6 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
 
 
 
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="“做个shell玩一玩”" data-title="“做个shell玩一玩”" data-url="http://yoursite.com/2016/10/16/“做个shell玩一玩”/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"duoshuo-key"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
 
 
 
@@ -286,7 +256,7 @@ func/ ：自定义模块，所有的自定义命令的实现函数文件都位�
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 进击的冲冲
+    		&copy; 2017 进击的冲冲
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -341,8 +311,6 @@ MathJax.Hub.Queue(function() {
       <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
     
     
-      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
-    
     
       <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
     
@@ -357,19 +325,13 @@ MathJax.Hub.Queue(function() {
     
 
     
-    	<section class="tools-section tools-section-tag">
-    			<div class="widget tagcloud" id="js-tagcloud">
-    				
-    			</div>
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-friends">
   		
   			<div class="friends-wrap" id="js-friends">
   			
-  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://lhr0323.com">刘红仁大帝博客</a>
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://lhr0323.com">刘红仁博客</a>
   	        
   	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
   	        
@@ -391,7 +353,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">准IT工作者&lt;br&gt;&lt;br&gt;见习网络工程师&lt;br&gt;CS专业学生</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">准IT工作者&lt;br&gt;&lt;br&gt;CS专业学生</div>
   	  	
     	</section>
     

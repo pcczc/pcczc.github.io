@@ -4,54 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>“LU矩阵分解实例” | pcczc</title>
+  <title>”C++指针笔记“ | pcczc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。—解：算法过程为：
-第一步：求LU矩阵
-通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示： 
-经迭代计算，最后得到L和U矩阵为：
-第二步：求L和U矩阵的逆u，l （1）求U矩阵的逆 
-由式（9）可得矩阵U的逆的各元素计算如下：
- （2）求L矩阵的逆 
-由（8）式可得L矩阵的逆的各元素计算如下 所以得到的逆矩阵为： 3）求A的逆矩阵由式（10）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="“LU矩阵分解实例”">
-<meta property="og:url" content="http://yoursite.com/2016/09/28/“LU矩阵分解实例”/index.html">
+  <meta name="description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
+<meta property="og:type" content="website">
+<meta property="og:title" content="”C++指针笔记“">
+<meta property="og:url" content="http://yoursite.com/article/C-指针笔记.html">
 <meta property="og:site_name" content="pcczc">
-<meta property="og:description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。—解：算法过程为：
-第一步：求LU矩阵
-通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示： 
-经迭代计算，最后得到L和U矩阵为：
-第二步：求L和U矩阵的逆u，l （1）求U矩阵的逆 
-由式（9）可得矩阵U的逆的各元素计算如下：
- （2）求L矩阵的逆 
-由（8）式可得L矩阵的逆的各元素计算如下 所以得到的逆矩阵为： 3）求A的逆矩阵由式（10）">
-<meta property="og:image" content="http://i.imgur.com/WVqijwl.png">
-<meta property="og:image" content="http://i.imgur.com/6EPtDAA.png">
-<meta property="og:image" content="http://i.imgur.com/ZfLqjty.png">
-<meta property="og:image" content="http://i.imgur.com/lFozegM.png">
-<meta property="og:image" content="http://i.imgur.com/HVMtSwB.png">
-<meta property="og:image" content="http://i.imgur.com/5MHL1Qc.png">
-<meta property="og:image" content="http://i.imgur.com/0NyZnmy.png">
-<meta property="og:image" content="http://i.imgur.com/J4qIb7W.png">
-<meta property="og:image" content="http://i.imgur.com/mHiuAYc.png">
-<meta property="og:image" content="http://i.imgur.com/2TD1xvj.png">
-<meta property="og:image" content="http://i.imgur.com/jTO7GZf.png">
-<meta property="og:image" content="http://i.imgur.com/APYFCQp.png">
-<meta property="og:image" content="http://i.imgur.com/uVBxCk1.png">
-<meta property="og:image" content="http://i.imgur.com/KXjifu2.png">
-<meta property="og:updated_time" content="2016-09-28T03:30:49.154Z">
+<meta property="og:description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
+<meta property="og:updated_time" content="2017-05-12T01:33:25.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="“LU矩阵分解实例”">
-<meta name="twitter:description" content="下面给定一四阶矩阵，通过LU分解求逆矩阵。—解：算法过程为：
-第一步：求LU矩阵
-通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示： 
-经迭代计算，最后得到L和U矩阵为：
-第二步：求L和U矩阵的逆u，l （1）求U矩阵的逆 
-由式（9）可得矩阵U的逆的各元素计算如下：
- （2）求L矩阵的逆 
-由（8）式可得L矩阵的逆的各元素计算如下 所以得到的逆矩阵为： 3）求A的逆矩阵由式（10）">
-<meta name="twitter:image" content="http://i.imgur.com/WVqijwl.png">
+<meta name="twitter:title" content="”C++指针笔记“">
+<meta name="twitter:description" content="指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。
+定义指针类型的方法将声明符写成d的形式，其中">
   
     <link rel="alternative" href="/atom.xml" title="pcczc" type="application/atom+xml">
   
@@ -182,7 +149,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-“LU矩阵分解实例”" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -192,7 +159,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      “LU矩阵分解实例”
+      ”C++指针笔记“
     </h1>
   
 
@@ -200,21 +167,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>下面给定一四阶矩阵，通过LU分解求逆矩阵。<img src="http://i.imgur.com/WVqijwl.png" alt="">—<br>解：算法过程为：<img src="http://i.imgur.com/6EPtDAA.png" alt=""></p>
-<p>第一步：求LU矩阵<img src="http://i.imgur.com/ZfLqjty.png" alt=""></p>
-<p>通过（4）~（7）式可逐步进行矩阵L和U中元素的计算，如下所示：<br> <img src="http://i.imgur.com/lFozegM.png" alt=""><br><img src="http://i.imgur.com/HVMtSwB.png" alt=""></p>
-<p>经迭代计算，最后得到L和U矩阵为：</p>
-<p><img src="http://i.imgur.com/5MHL1Qc.png" alt=""><br>第二步：求L和U矩阵的逆u，l<br> <img src="http://i.imgur.com/0NyZnmy.png" alt=""><br>（1）求U矩阵的逆<br> <img src="http://i.imgur.com/J4qIb7W.png" alt=""></p>
-<p>由式（9）可得矩阵U的逆的各元素计算如下：</p>
-<p> <img src="http://i.imgur.com/mHiuAYc.png" alt=""><br>（2）求L矩阵的逆<br> <img src="http://i.imgur.com/2TD1xvj.png" alt=""></p>
-<p>由（8）式可得L矩阵的逆的各元素计算如下<br> <img src="http://i.imgur.com/jTO7GZf.png" alt=""><br>所以得到的逆矩阵为：<br> <img src="http://i.imgur.com/APYFCQp.png" alt=""><br>3）求A的逆矩阵<br>由式（10）可计算得到矩阵A的逆，如下：<br> <img src="http://i.imgur.com/uVBxCk1.png" alt=""><br>由程序计算出的结果如下：<br> <img src="http://i.imgur.com/KXjifu2.png" alt=""></p>
+        <p>指针是指向另外一个类型的复合类型，另外一种类型的复合类型，与引用类似，指针也实现了对其他对象的间接访问。然而指针与引用又有很多不同点。指针本身就是一个对象，允许对指针赋值和拷贝。和其他内置类型一样，在指针的生命周期内可以指向几个不同的对象。其次，指针无需在定义时赋值。合体它内置类型一样，在块的作用域内定义的指针如果没有被初始 化，也拥有一个不确定的值。</p>
+<p>定义指针类型的方法将声明符写成<em>d的形式，其中d是变量名，如果在同一条语句中定义了几条指针，每个变量前面都必须有符号</em>：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> *iP1，*ip2;<span class="comment">//ip1和iPhone都是指向int型对象的指针</span></div><div class="line"><span class="keyword">int</span> *p=&amp;ival;<span class="comment">//dp2是只想double类型对象的指针，dp是double型对象</span></div></pre></td></tr></table></figure></p>
+<p>#获取对象的地址<br>指针存放某个对象的地址，需要用到取地址符（操作符&amp;):<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> ival=<span class="number">42</span>；</div><div class="line"><span class="keyword">int</span> *p=&amp;ival；<span class="comment">//p存放ival的地址，或者说p是ival的指针</span></div></pre></td></tr></table></figure></p>
+<p>第二条语句把P定义为一个指向int型的指针，随后初始化p令其指向名为ival的int对象。因为引用不是对象，没有实际地址，所以不能定义指向引用的指针。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">double</span> dval;</div><div class="line"><span class="keyword">double</span> *pd=&amp;dval;<span class="comment">//正确，初始化为double型的地址</span></div><div class="line"><span class="keyword">double</span> *pd2=pd;  <span class="comment">//正确，初始值是指向double对象的指针</span></div><div class="line"><span class="keyword">int</span> *pi=pd;      <span class="comment">//错误：指针pi类型和pd类型不同</span></div><div class="line">pi=&amp;dval;        <span class="comment">//错误：试图把double型对象的地址赋给int型指针</span></div></pre></td></tr></table></figure></p>
+<p>因为在声明语句中指针的类型实际上被用于指定它所指向它所指向对象的类型，所以两者必须匹配。如果指针指向了一个其他类型的对象，对该对象的操作将发生错误。</p>
+<p>#指针值<br>指针的值（即地址）用属下列4种状态之一：<br>1.指向一个对象。<br>2.指向紧邻对象所占空间的下一个位置。<br>3.空指针，意味着没有任何的指向对象。<br>4.无效指针，上述情况之外的其他值。</p>
+<p>#利用指针访问对象<br>如果指针指向了一个对象，则允许用解引用符（操作符*）来访问该对象：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> ival=<span class="number">42</span>;</div><div class="line"><span class="keyword">int</span> *p=&amp;ival;<span class="comment">//p存放着变量ival的地址，或者说p是指针变量ival的指针</span></div><div class="line"><span class="built_in">cout</span>&lt;&lt;p;     <span class="comment">//42</span></div></pre></td></tr></table></figure></p>
+<p>对指针解引用直接赋值也可以得到相应的值。</p>
+<p>#相关符号的多重含义判断<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">	<span class="keyword">int</span> i=<span class="number">42</span>;</div><div class="line">	<span class="keyword">int</span> &amp;r=i;<span class="comment">//&amp;紧随类型名出现，因此是声明的一部分，r是一个引用 </span></div><div class="line">	<span class="keyword">int</span> *p;<span class="comment">// 紧随类型名出现，因此是声明的一部分，p是一个指针 </span></div><div class="line">	p=&amp;i;<span class="comment">//&amp;出现在表达式中，是一个取地址符 </span></div><div class="line">	*p=i;<span class="comment">//*出现在表达式中，是一个解引用符 </span></div><div class="line">	<span class="keyword">int</span> &amp;r2=*p;<span class="comment">//&amp;是声明的一部分，*是一个解引用符 </span></div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">	<span class="comment">/*int ival=42;</span></div><div class="line">	int *p=&amp;ival;</div><div class="line">	cout&lt;&lt;*p;</div><div class="line">	return 0;*/</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>#空指针<br>  空指针不指向任何对象，在试图使用一个指针之前可以首先检查是否为空。例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> *p1=<span class="literal">nullptr</span>;<span class="comment">//等价于int *p=0；</span></div><div class="line"><span class="keyword">int</span> *p2=<span class="number">0</span>;      <span class="comment">//直接将p2初始化为字面常量0；</span></div><div class="line"><span class="comment">//需要先#include&lt;cstdlib&gt;</span></div><div class="line"><span class="keyword">int</span> *p3=<span class="literal">NULL</span>;   <span class="comment">//等价于int *p3=0；</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/09/28/“LU矩阵分解实例”/" class="archive-article-date">
-  	<time datetime="2016-09-28T02:32:14.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-28</time>
+      <a href="/article/C-指针笔记.html" class="archive-article-date">
+  	<time datetime="2016-09-28T13:09:23.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-28</time>
 </a>
       
       
@@ -225,20 +194,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2016/09/28/“C语言实现入门排序”/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          “C语言实现入门排序”
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 
 
@@ -300,7 +255,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
